@@ -30,7 +30,7 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: "alirs2002"
-          password: "@Alirs2002"
+          password: "@kdkobe4142"
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v2

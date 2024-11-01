@@ -39,7 +39,7 @@ jobs:
           context: .
           file: ./cloud_practice2/Dockerfile
           push: true
-          tags: your-dockerhub-username/your-image-name:latest
+          tags: alirs2002/django-app:latest
 
       - name: Logout from Docker Hub
         run: docker logout

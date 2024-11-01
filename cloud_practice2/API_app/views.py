@@ -40,6 +40,6 @@ def randomword(request):
         definition = requests.get(api_url, headers={'X-Api-Key': 'UQNmRzC9t1DfaansEEfz1Q==04WUlN7tuwStTX9f'})
         cache.set(word,definition.text,timeout=300) 
 
-        return HttpResponse(f"the random word is  : {word} --------definition: {definition.text}")
+        return HttpResponse(f"the random word is  : {word} ------------definition: {definition.text}")
     else:
         print("Error:", response.status_code, response.text)
